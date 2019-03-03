@@ -1,0 +1,187 @@
+.App-main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: "row";
+  flex-direction: "row";
+  /* margin: 0 10%; */
+  width: 80%;
+  margin-top: 50px;
+  padding: 0 10%;
+}
+
+.App-main .App-cuisine {
+  display: -webkit-flex;
+  display: flex;
+  width: 300px;
+  box-shadow: 0 0 10px #3f3f3f;
+  background-color: white;
+  /* padding: 10px; */
+  border-radius: 10px;
+}
+
+.App-cuisine .container {
+  width: 100%;
+  text-align: left;
+}
+
+.App-cuisine .container h2 {
+  color: #8844ff;
+  padding-left: 20px;
+  letter-spacing: 1.4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cuisineList {
+  width: 100%;
+  height: 70vh;
+  overflow-x: scroll;
+}
+
+.App-main .resturantList {
+  flex: 6;
+  display: flex;
+}
+
+.each-cusine {
+  height: 70px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.each-cusine:hover {
+  background-color: bisque;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: bisque;
+}
+
+.each-cusine > div:first-child {
+  text-align: left;
+}
+
+.each-cusine .cusine-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #3f3f3f;
+}
+
+.each-cusine .cuisine-count {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+
+.resturantList {
+  padding: 0px 20px;
+}
+
+.resturantList > div:first-child {
+  width: 100%;
+  text-align: left;
+}
+
+.search-modifier {
+  display: flex;
+  width: 100%;
+}
+
+.search-modifier .search {
+  display: flex;
+  width: 80%;
+}
+.search-modifier .search input {
+  width: 40%;
+  height: 40px;
+  box-shadow: 0 0 10px #3f3f3f;
+  border: 0px;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.resturantList .container {
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+  max-height: 80vh;
+}
+
+.container .each-item {
+  flex: 1 0 33%;
+  padding: 50px 0px;
+  overflow: hidden;
+}
+
+.each-item > div:first-child {
+  padding: 0 20px;
+}
+
+.container .each-item:hover {
+  cursor: pointer;
+}
+
+.each-item .resturant-image {
+  height: 150px;
+  text-align: center;
+}
+
+.restuarant-name {
+  margin: 10px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.restuarant-review {
+  color: #8f8f8f;
+}
+
+.restuarant-review span {
+  font-size: 12px;
+}
+
+.cusine-list {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #7f7f7f;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cusine-list .icon {
+  color: red;
+}
+
+.cusine-list > .each-cusine-list {
+  margin-right: 5px;
+  padding: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #3f3f3f;
+  margin-bottom: 5px;
+}
+
+.search-modifier > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px #3f3f3f;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.search-modifier > div:nth-of-type(2) :hover {
+  cursor: pointer;
+}
+
+.search-modifier > div:nth-of-type(2) > div:first-child {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #3f3f3f;
+}
+
+.active {
+  background-color: #7f7f7f;
+}

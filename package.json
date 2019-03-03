@@ -2,10 +2,13 @@
   "name": "restuarants",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
+    "json-loader": "^0.5.7",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "underscore": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,83 @@
+.Top-Resturants {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #f4f4f4;
+}
+
+.Top-Resturants .head {
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: initial;
+  color: #8844ff;
+  font-weight: bold;
+}
+
+.Top-Resturants .container {
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+
+.each-top-restuarant {
+  height: 300px;
+  min-width: 250px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.resturant-name {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+.resturant-name:hover {
+  color: #884488;
+}
+.resturant-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  /* object-fit: scale-down; */
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: 25px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.rating > div:first-child {
+  color: #8844ff;
+}
+
+.indicator {
+  position: absolute;
+  right: -30px;
+  /* margin-right: 9%; */
+  background-color: #fafafa;
+  height: 60px;
+  width: 60px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 60px;
+  top: 25%;
+  cursor: pointer;
+  box-shadow: 0 0 10px #3f3f3f;
+}
+
+.number-of-reviews {
+  color: #3f3f3f;
+  font-weight: 100;
+  font-size: 16px;
+}
